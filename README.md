@@ -16,4 +16,5 @@
 
 ## Description
 
-SafeWalk is a women safety mobile application developed to help users during emergency situations. The application can send SOS alerts and share live GPS location using voice commands and shake detection.
+SafeWalk is a women safety mobile application developed to help users during emergency situations. The application can send SOS alerts and share live GPS location using voice commands and shake detection. The project is designed to reduce unnecessary battery consumption by activating location tracking and emergency features only when required.
+
