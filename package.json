@@ -1,0 +1,28 @@
+{
+  "name": "safewalk-backend",
+  "version": "1.0.0",
+  "description": "SafeWalk backend API with Node.js, Express, MySQL, JWT auth, and Multer profile uploads",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "*",
+    "bcryptjs": "*",
+    "cors": "*",
+    "dotenv": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "multer": "*",
+    "mysql2": "*",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.34.6"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}

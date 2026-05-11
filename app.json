@@ -1,0 +1,101 @@
+{
+  "expo": {
+    "name": "SAFE WALK",
+    "slug": "safe-walk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/ws.png",
+    "scheme": "sos",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/ws.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/ws.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.pulkit_singhal.sos",
+      "usesCleartextTraffic": true,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "SEND_SMS",
+        "VIBRATE",
+        "RECORD_AUDIO",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Allow SOS to access your location to send emergency messages with your current location.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Allow SOS to access your location to send emergency messages with your current location.",
+        "NSSpeechRecognitionUsageDescription": "SAFE WALK uses speech recognition to detect voice commands for emergency alerts.",
+        "NSMicrophoneUsageDescription": "SAFE WALK uses the microphone to listen for voice commands like help to trigger emergency alerts."
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/ws.png"
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "SAFE WALK uses the microphone to listen for voice commands like help to trigger emergency alerts.",
+          "speechRecognitionPermission": "SAFE WALK uses speech recognition to detect voice commands for emergency alerts.",
+          "androidForegroundServiceType": "dataSync"
+        }
+      ],
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/ws.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow SOS to access your location to send emergency messages with your current location.",
+          "locationAlwaysPermission": "Allow SOS to access your location to send emergency messages with your current location.",
+          "locationWhenInUsePermission": "Allow SOS to access your location to send emergency messages with your current location.",
+          "isIosBackgroundLocationEnabled": false,
+          "isAndroidBackgroundLocationEnabled": false
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/ws.png",
+          "color": "#8B0000",
+          "sounds": []
+        }
+      ],
+      "./app.plugin.js"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b84aa6d4-76f2-4739-92ae-f76fb4aeac72"
+      }
+    }
+  }
+}
